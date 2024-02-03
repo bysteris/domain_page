@@ -49,7 +49,10 @@ body {
     font-size: 16px;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+
+    @media (max-width: 900px) {
+        height: 100%;
+    }
 }
 
 body.dark {
@@ -67,7 +70,6 @@ body.dark {
 
     @media (max-width: 900px) {
         padding: 0 20px;
-        overflow: auto;
     }
 
     @media (max-width: 370px) {

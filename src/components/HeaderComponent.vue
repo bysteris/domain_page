@@ -20,11 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
-
-  @media (max-width: 900px) {
-    padding-top: 20px;
-  }
+  padding: 20px 0;
 
   .logo img {
     width: 100%;
