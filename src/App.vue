@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrapper">
+    <HeaderComponenet></HeaderComponenet>
+    <MainComponent domain-name="%domain_name%"></MainComponent>
+    <FooterComponent
+      year="2024"
+      copyright-text="&nbsp;© Домен припаркован с помощью сервиса&nbsp;"
+      company-name="SigmaParking"
+    ></FooterComponent>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponenet from "./components/HeaderComponent.vue";
+import MainComponent from "./components/MainComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HeaderComponenet,
+    FooterComponent,
+    MainComponent,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: inherit;
 }
 </style>
