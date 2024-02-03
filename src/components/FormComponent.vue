@@ -42,6 +42,7 @@ form {
   background: linear-gradient(225deg, #29d1a9 0%, #0d4280 100%);
 
   @media (max-width: 900px) {
+    padding: 20px 10px 10px;
   }
 
   .form-controls {
